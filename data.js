@@ -126,6 +126,46 @@ export const orangeItems = [
     'https://steamuserimages-a.akamaihd.net/ugc/1814392872606753134/92CD729E20252984EEECDD3D0464CE4884F83A6F/',
     'https://steamuserimages-a.akamaihd.net/ugc/1814392872606753140/A11938254441099A02B0A128D50228480FF12D65/',
     'https://steamuserimages-a.akamaihd.net/ugc/1814392872606753146/1EBBDC0F4855DF5B80AC58B1140FE2529959DB1F/',
-    'https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/9/9c/Remote_Caffeinator.png/revision/latest/scale-to-width-down/64?cb=20220304231621',
+    'https://steamuserimages-a.akamaihd.net/ugc/1866184367599232756/B38C63D4C0BCD169BD28851DB4BB9843B2E37F27/',
     'https://steamuserimages-a.akamaihd.net/ugc/793132599281896393/884BD05F1154AAFE54A1A9E989FE892BEE3F3FBC/',
+]
+
+export const characters = [
+    'Коммандо',
+    'Охотница',
+    'Бандит',
+    'МУЛ-Т',
+    'Инженер',
+    'Изобретатель',
+    'Наемник',
+    'РЕКС',
+    'Погрузчица',
+    'Акрид',
+    'Капитан',
+    'Рельсотронщица',
+    'Исчадие Пустоты',
+]
+
+export const artifacts = [
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423311609316/3B2485D2A9F6B35003461E16A7C513EFAAA04080/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423311643581/C3FE117E2F1E2294EF4CE0DE439B3609E58774B9/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423311656938/BB60DCF0B2FBBF2B09AAEBE050D0F15B345D1A3C/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423311942239/88C6185CCC0C94A6B70EDF0F7B41E11A66311556/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312372243/02D47D8997D2158D0A765919A2BF47391E8A7764/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312383221/937F6462836E063908AFA0EF94CAE5DF45722159/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312389570/04DD2A07DAAF246180F8A43C4C1DB00A6D0E69A5/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312400513/D109C10EACB5DA23C045C7699C06234588D2AE54/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312405023/502A8A8E5CCC19A223090193143894DA9681DBAD/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312408581/A7C3A73CA18207C182CA3C3C25B2D2847BAE09F3/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312411676/43271D17E9FA9CCB86D61D9C607E4C0726FA1C5C/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312417158/9F32A24F4C7ECC31E0A5B0EFEF65307A0C5B2EC4/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312420981/8DCAD96E76F273FEE918301B10690B01435F6894/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312424176/23FE63A78CF3FF764C2ED3F5B352717719C5F6E0/',
+    'https://steamuserimages-a.akamaihd.net/ugc/1018318423312427862/A90BABC4AAB0B6E98627ECF5ECAEC42975582302/',
+]
+
+export const difficulty = [
+    'Easy',
+    'Normal',
+    'Hard',
 ]

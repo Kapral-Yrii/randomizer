@@ -1,24 +1,38 @@
-import { whiteAndGreenItems, yellowItems, redItems, orangeItems } from './data.js'
+import { whiteAndGreenItems, yellowItems, redItems, orangeItems, characters, difficulty, artifacts } from './data.js'
 
 const button = document.querySelectorAll("button")
 const listY = document.querySelector(".listY")
 const listB = document.querySelector(".listB")
+const characterNameY = document.querySelector(".characterNameY")
+const characterNameB = document.querySelector(".characterNameB")
+const levelOfDifficulty = document.querySelector(".levelOfDifficulty")
+const artifactItem = document.querySelector(".artifactItem")
+
 
 button.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        let list
-        console.log(e.target.dataset.actions);
         switch (e.target.dataset.actions) {
-            case "Y":
-                list = listY
+            case "itemsY":
+                randomizerItems(listY)
                 break;
-            case "B":
-                list = listB
+            case "itemsB":
+                randomizerItems(listB)
+                break;
+            case "characterY":
+                randomizerCharAndDiff(characterNameY, characters)
+                break;
+            case "characterB":
+                randomizerCharAndDiff(characterNameB, characters)
+                break;
+            case "levelOfDifficulty":
+                randomizerCharAndDiff(levelOfDifficulty, difficulty)
+                break;
+            case "artifact":
+                randomizerArtifact(artifactItem, artifacts)
                 break;
             default:
                 console.log("Error");
         }
-        randomizer(list)
     })
 })
 
@@ -26,16 +40,16 @@ const getRandomInt = (max) => {
   return Math.floor(Math.random() * max);
 }
 
-const randomizer = (list) => {
+const randomizerItems = (list) => {
     let randomItems = []
     for (let i = 0; i < 10; i++) {
-        let item = whiteAndGreenItems[getRandomInt(whiteAndGreenItems.length - 1)]
+        let item = whiteAndGreenItems[getRandomInt(whiteAndGreenItems.length)]
         while (randomItems.includes(item)) {
-            item = whiteAndGreenItems[getRandomInt(whiteAndGreenItems.length - 1)]
+            item = whiteAndGreenItems[getRandomInt(whiteAndGreenItems.length)]
         }
         randomItems.push(item)
         if (i === 9) {
-           randomItems.push(yellowItems[getRandomInt(yellowItems.length - 1)], redItems[getRandomInt(redItems.length - 1)], orangeItems[getRandomInt(orangeItems.length - 1)]) 
+           randomItems.push(yellowItems[getRandomInt(yellowItems.length - 1)], redItems[getRandomInt(redItems.length)], orangeItems[getRandomInt(orangeItems.length)]) 
         }
     }
     const markup = randomItems.reduce((string, e) =>
@@ -44,4 +58,14 @@ const randomizer = (list) => {
               </li> `, ""
     );
     list.innerHTML = markup
+}
+
+const randomizerArtifact = (list, data) => {
+    const markup =
+        `<img class="image" src="${data[getRandomInt(data.length)]}" alt="photo"/>`
+    list.innerHTML = markup
+}
+
+const randomizerCharAndDiff = (list, data) => {
+    list.innerHTML = `- ${data[getRandomInt(data.length)]}`
 }

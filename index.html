@@ -10,12 +10,27 @@
 <body class="body">
     <div class="container">
         <div>
-            <button class="btn" data-actions="Y">Юра</button>
+            <h2>Юра <span class="characterNameY"></span></h2>
+            <button class="btn" data-actions="itemsY">Предмети</button>
+            <button class="btn" data-actions="characterY">Персонаж</button>
             <ul class="listY list"></ul>
         </div>
         <div>
-            <button class="btn" data-actions="B">Богдан</button>
+            <h2>Богдан <span class="characterNameB"></span></h2>
+            <button class="btn" data-actions="itemsB">Предмети</button>
+            <button class="btn" data-actions="characterB">Персонаж</button>
             <ul class="listB list"></ul>
+        </div>
+        <div>
+            <h2>Налаштування сесії</h2>
+            <ul class="list">
+                <li><button class="btn" data-actions="levelOfDifficulty">Рівень складності</button></li>
+                <li><span class="levelOfDifficulty"></span></li>
+            </ul>
+            <ul class="list">
+                <li><button class="btn" data-actions="artifact">Артефакт</button></li>
+                <li><span class="artifactItem"></span></li>
+            </ul>
         </div>
     </div>
     <script src="./index.js" type="module"></script>
